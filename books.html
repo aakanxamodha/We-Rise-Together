@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeRiseTogether</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	
+</head>
+
+<body>
+
+<header>
+	<nav  id="grad1" >
+		<div>
+			<!-- Inserting Logo -->
+			<a href="home.html">
+				<img border="0" alt="Image Not Found" src="WeRiseTogether .png" width="150" height="150" align="left">
+			</a>	
+		</div>
+		
+		<div>
+			<!-- To adjust the colour effect of name -->
+			<h1 align="left" class="welcome">
+				<font face="Cooper" size="15" color="white">Download free Books</font>
+			</h1>	
+					
+		</div>
+		
+	</nav>
+		
+<div class="row">
+	
+	<!-- Adding content to Left column -->
+	<div class="left" style="background-color:#4b85da;">
+		
+		<h2>What would you like...</h2>
+		
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+		<ul id="myMenu">
+			<li><a href="books.html">Books Download</a></li>
+			<li><a href="papers.html">Question Paper</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact Developers</a></li>
+		</ul>
+		<img alt="Image Not Found" src="https://www.goingit.com.au/images/web-learn.png"
+			 style="padding-top: 50px">
+	</div>
+
+	<!-- Adding content to right column -->
+	<div class="right head_name" style="background-color:white;">	
+		
+	<div align="center" class="head_name course_content" style="background-color:white; padding:20px;">
+				
+		<!-- Adding details -->			
+													
+		<h2> Programming Language </h2>									<br><br>	
+			<h3>											
+			Click to see JavaScript_ JavaScript For Beginners <a href="books/JavaScript_ JavaScript For Beginners .pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			Click to see Learn to Program with C <a href="books/Learn to Program with C.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			Click to see Learn C Programming <a href="books/Learn C Programming.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			</h3>											
+		<h2> Web Designing </h2>									<br><br>	
+			<h3>											
+			Click to see HTML & CSS Crash Course <a href="books/HTML & CSS Crash Course.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			Click to see Learning Web Design <a href="books/Learning Web Design.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			</h3>	
+		<h2> English Language </h2>									<br><br>	
+			<h3>											
+			Click to see BASIC ENGLISH GRAMMAR STRUCTURES AND VOCABULARY <a href="books/BASIC ENGLISH GRAMMAR STRUCTURES AND VOCABULARY.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			Click to see Basic For English Language Learning  <a href="books/Basic For English Language Learning .pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			</h3>	
+		<h2> Computer Fundamentals </h2>									<br><br>	
+			<h3>											
+			Click to see Basics of Computer Fundamentals <a href="books/Basics of Computer Fundamentals.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			Click to see Basic For Fundamentals of Computer Architecture and Assembly Language   <a href="books/Fundamentals of Computer Architecture and Assembly Language .pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Click here</a>		<br><br></font>
+			</h3>	
+								
+	</div>
+	</div>
+						
+</div>	
+</header>
+
+
+<script>
+function myFunction() {
+	var input, filter, ul, li, a, i;
+		
+	input = document.getElementById("mySearch");				<!-- Taking text box with id mySearch in 'input' variable -->
+	filter = input.value.toUpperCase();					<!-- Taking the value of text box which is saved in 'input' variable and converting it to uppercase -->		
+	ul = document.getElementById("myMenu");					<!-- Taking Unorder list with id myMenu in 'ul' variable -->
+	li = ul.getElementsByTagName("li");					<!-- Taking the li value of unorder list which is saved in 'ul' variable -->
+																	
+	for (i = 0; i < li.length; i++) 					<!-- Taking for loop until i is less than length of li tag (list is an array) -->
+	{									
+		a = li[i].getElementsByTagName("a")[0];				<!-- Taking the anchor tag inside the li tag saved in 'a' variable -->
+<!-- Checking the condition by taking the value from anchor tag which is saved in 'a' variable with the help  of innerHTML then converting it to upper case then with the help of indexOf comparing the characters saved in 'filter' variable with the elements in anchor tag which is saved in 'a' variable. The value is (-1) when it doesn't matches therefore > -1 is used -->
+		if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {		
+			li[i].style.display = "";				<!-- If the condition satisfies then display the element of the anchor tag -->
+		} 													
+		else {									
+			li[i].style.display = "none";				<!-- If not don't show anything -->					
+		}
+	}
+}
+</script>
+
+</body>
+</html>
+
+<!-- getElementsByTagName("") is same as getElementById("") the only difference is that getElementById("") uses id name and getElementsByTagName("") uses tag name -->
+

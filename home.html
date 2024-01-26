@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeRiseTogether</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	
+</head>
+
+<body>
+
+<header>
+	<nav  id="grad1" >
+		<div>
+			<!-- Inserting Logo -->
+			<a href="home.html">
+				<img border="0" alt="Image Not Found" src="WeRiseTogether .png" width="150" height="150">
+			</a>	
+		</div>
+		
+		<div>
+			<!-- To adjust the Font effect of name -->
+			<h1 align="left" class="welcome">
+				<font face="Cooper" size="15" color="white"> welcome to </font>
+				<font face="Freestyle Script" size="30" color="white"> we rise together...!</font>
+			</h1>	
+					
+		</div>
+		
+	</nav>
+	
+<div class="row">
+	
+	<!-- Adding content to Left column -->
+	<div class="left" style="background-color:#4b85da;">
+		
+		<h2>What would you like...</h2>
+		
+		<!-- Search menu on left side -->
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+		<ul id="myMenu" type="none">
+			<li><a href="books.html">Books Download</a></li>
+			<li><a href="papers.html">Question Paper</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact Developers</a></li>
+		</ul>
+		<!-- Image at the end of the list -->
+		<img alt="Image Not Found" src="https://www.goingit.com.au/images/web-learn.png"
+			 style="padding-top: 50px">
+	</div>
+
+	<!-- Adding content to right column -->
+	<div class="right head_name" style="background-color:white;">
+		<!-- Course example on the right side -->
+		<h2>We Recomend You....</h2> 	
+		<div class="icon">
+		<figure>
+			<a href="c.html">
+			<img src="https://www.pngitem.com/pimgs/m/31-312155_c-programming-language-logo-hd-png-download.png" 
+				alt="C language" width="150" height="150">
+			<figcaption>Basics Of C language</figcaption>
+			</a>
+		</figure>
+		<figure>
+			<a href="html.html">
+			<img src="https://play-lh.googleusercontent.com/p9tjtYUe1FL9XxMbfhIEyLf4Frjcq7GVNdaQs0hHyAtNdYy18hOInpUBydyQxFzyNdQ" 
+				alt="Html" width="150" height="150">
+			<figcaption>Basics Of HTML</figcaption>
+			</a>
+		</figure>
+		<figure>
+			<a href="js.html">
+			<img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-shield-logo-icon-2.png" 
+				alt="C language" width="150" height="150">
+			<figcaption>Basics Of Java Script</figcaption>
+			</a>
+		</figure>
+		<figure>
+			<a href="css.html">
+			<img src="https://ucarecdn.com/f49e8fc4-876f-49ef-934f-89812fc4125e/" 
+				alt="C language" width="150" height="150">
+			<figcaption>Basics Of CSS</figcaption>
+			</a>
+		</figure>
+		<!-- Adding the link of courses page to see more  -->
+			<div>
+			<a href="courses.html">
+				<h3>+ See</h3>
+				<h3>More</h3>
+			</a>
+			</div>
+		</div>
+		
+		<!-- Adding the image of students at the bottom -->
+		<img border=0 alt="Image Not Found" src="https://www.thisisaustralia.com/wp-content/themes/3clicks/images/master_degree.jpg"
+			style="padding: 50px; padding-left: 70px;">
+		
+		</div>
+</div>
+	
+</header>
+
+<script>
+function myFunction() {
+	var input, filter, ul, li, a, i;
+		
+	input = document.getElementById("mySearch");				<!-- Taking text box with id mySearch in 'input' variable -->
+	filter = input.value.toUpperCase();					<!-- Taking the value of text box which is saved in 'input' variable and converting it to uppercase -->		
+	ul = document.getElementById("myMenu");					<!-- Taking Unorder list with id myMenu in 'ul' variable -->
+	li = ul.getElementsByTagName("li");					<!-- Taking the li value of unorder list which is saved in 'ul' variable -->
+																	
+	for (i = 0; i < li.length; i++) 					<!-- Taking for loop until i is less than length of li tag (list is an array) -->
+	{									
+		a = li[i].getElementsByTagName("a")[0];				<!-- Taking the anchor tag inside the li tag saved in 'a' variable -->
+<!-- Checking the condition by taking the value from anchor tag which is saved in 'a' variable with the help  of innerHTML then converting it to upper case then with the help of indexOf comparing the characters saved in 'filter' variable with the elements in anchor tag which is saved in 'a' variable. The value is (-1) when it doesn't matches therefore > -1 is used -->
+		if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {		
+			li[i].style.display = "";				<!-- If the condition satisfies then display the element of the anchor tag -->
+		} 													
+		else {									
+			li[i].style.display = "none";				<!-- If not don't show anything -->					
+		}
+	}
+}
+</script>
+
+</body>
+</html>
+
+<!-- getElementsByTagName("") is same as getElementById("") the only difference is that getElementById("") uses id name and getElementsByTagName("") uses tag name -->
+
+
+
+
+

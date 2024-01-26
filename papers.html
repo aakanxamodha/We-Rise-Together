@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeRiseTogether</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	
+</head>
+
+<body>
+
+<header>
+	<nav  id="grad1" >
+		<div>
+			<!-- Inserting Logo -->
+			<a href="home.html">
+				<img border="0" alt="Image Not Found" src="WeRiseTogether .png" width="150" height="150" align="left">
+			</a>	
+		</div>
+		
+		<div>
+			<!-- To adjust the colour effect of name -->
+			<h1 align="left" class="welcome">
+				<font face="Cooper" size="15" color="white">Download free Question papers</font>
+			</h1>	
+					
+		</div>
+		
+	</nav>
+		
+<div class="row">
+	
+	<!-- Adding content to Left column -->
+	<div class="left" style="background-color:#4b85da;">
+		
+		<h2>What would you like...</h2>
+		
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+		<ul id="myMenu">
+			<li><a href="books.html">Books Download</a></li>
+			<li><a href="papers.html">Question Paper</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact Developers</a></li>
+		</ul>
+		<img alt="Image Not Found" src="https://www.goingit.com.au/images/web-learn.png"
+			 style="padding-top: 50px">
+	</div>
+
+	<!-- Adding content to right column -->
+	<div class="right head_name" style="background-color:white;">	
+		
+	<div align="center" class="head_name course_content" style="background-color:white; padding:20px;">
+								
+		<!-- Adding details -->
+																		
+		<h2> NEET 2016</h2>									<br><br>	
+			<h3>											
+			Click to see NEET question paper of 2016 <a href="NEET/NEET 2016 Question Paper Code AA.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			Click to see NEET question paper of 2016 <a href="NEET/NEET 2016 Question Paper Code BB.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			Click to see NEET question paper of 2016 <a href="NEET/NEET 2016 Question Paper Code CC.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code CC</a>		<br><br></font>
+			</h3>											
+		<h2> NEET 2017</h2>									<br><br>	
+			<h3>											
+			Click to see NEET question paper of 2017 <a href="NEET/NEET-2017-Question-Paper-Code-B (1).pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			Click to see NEET question paper of 2017 <a href="NEET/Final_NEET_2017_Offical_Paper_CODE - B-Q-X_07-05-17 2.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			</h3>											
+		<h2> NEET 2018</h2>									<br><br>	
+			<h3>											
+			Click to see NEET question paper of 2018 <a href="NEET/NEET-2018-Code-AA (1).pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			</h3>											
+		<h2> NEET 2019</h2>									<br><br>	
+			<h3>										
+			Click to see NEET question paper of 2019 <a href="NEET/neet-2019-question-paper.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>		
+			</h3>
+			
+			
+		<h2> JEE 2016</h2>									<br><br>	
+			<h3>											
+			Click to see JEE question paper of 2016 <a href="JEE/2016 paper 2.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			Click to see JEE question paper of 2016 <a href="JEE/2016 paper 1.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			</h3>											
+		<h2> JEE 2017</h2>									<br><br>	
+			<h3>											
+			Click to see JEE question paper of 2017 <a href="JEE/2017 paper 1.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			Click to see JEE question paper of 2017 <a href="JEE/2017 paper 2.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			</h3>											
+		<h2> JEE 2018</h2>									<br><br>	
+			<h3>											
+			Click to see JEE question paper of 2018 <a href="JEE/2018 (1).pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>
+			Click to see JEE question paper of 2018 <a href="JEE/2018.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			</h3>											
+		<h2> JEE 2019</h2>									<br><br>	
+			<h3>										
+			Click to see JEE question paper of 2019 <a href="JEE/2019 (1).pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code AA</a>		<br><br></font>		
+			Click to see JEE question paper of 2019 <a href="JEE/2019.pdf" target="_blank">
+				<font face="Copperplate Gothic" color="Green">Code BB</a>		<br><br></font>
+			</h3>
+	</div>
+	</div>
+						
+</div>	
+</header>
+
+
+<script>
+function myFunction() {
+	var input, filter, ul, li, a, i;
+		
+	input = document.getElementById("mySearch");				<!-- Taking text box with id mySearch in 'input' variable -->
+	filter = input.value.toUpperCase();					<!-- Taking the value of text box which is saved in 'input' variable and converting it to uppercase -->		
+	ul = document.getElementById("myMenu");					<!-- Taking Unorder list with id myMenu in 'ul' variable -->
+	li = ul.getElementsByTagName("li");					<!-- Taking the li value of unorder list which is saved in 'ul' variable -->
+																	
+	for (i = 0; i < li.length; i++) 					<!-- Taking for loop until i is less than length of li tag (list is an array) -->
+	{									
+		a = li[i].getElementsByTagName("a")[0];				<!-- Taking the anchor tag inside the li tag saved in 'a' variable -->
+<!-- Checking the condition by taking the value from anchor tag which is saved in 'a' variable with the help  of innerHTML then converting it to upper case then with the help of indexOf comparing the characters saved in 'filter' variable with the elements in anchor tag which is saved in 'a' variable. The value is (-1) when it doesn't matches therefore > -1 is used -->
+		if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {		
+			li[i].style.display = "";				<!-- If the condition satisfies then display the element of the anchor tag -->
+		} 													
+		else {									
+			li[i].style.display = "none";				<!-- If not don't show anything -->					
+		}
+	}
+}
+</script>
+
+</body>
+</html>
+
+<!-- getElementsByTagName("") is same as getElementById("") the only difference is that getElementById("") uses id name and getElementsByTagName("") uses tag name -->
+
